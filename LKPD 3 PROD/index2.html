@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //input bilangan bulat
+        var bilangan = prompt("Masukkan sebuah bilangan bulat")
+
+        //konversi bilangan menjadi string untuk mendapatkan panjangnya
+        var bilanganString = bilangan.toString();
+
+        //inisial variabel satuan, puluhan, ratusan
+        var satuan =0;
+        var puluhan =0;
+        var ratusan =0;
+
+        //periksa panjang bilangan dan ambil  digit sesuai posisi
+        if (bilanganString.length === 1) {
+            satuan = bilangan;
+        } else if (bilanganString.length === 2) {
+            satuan = bilanganString[1];
+            puluhan = bilanganString[0];
+        } else if (bilanganString.length === 3) {
+            satuan = bilanganString[2];
+            puluhan = bilanganString[1];
+            ratusan = bilanganString[0];
+        }
+
+        //menampilkan hasil
+        console.log(`Bilangan`, bilangan, `mempunyai:`);
+        console.log(ratusan, `adalah ratusan`);
+        console.log(puluhan,   `adalah puluhan`);
+        console.log(satuan, `adalah satuan`);
+    </script>
+</body>
+</html>

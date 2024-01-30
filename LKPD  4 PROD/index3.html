@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function menghitung (datajam, datamenit, datadetik) {
+            
+            let totaldetik =  datajam * 3600 + datamenit * 60 + datadetik;
+            let hasiltotaldetik = totaldetik +1;
+            let totaljam =(Math.floor(hasiltotaldetik / 3600) % 24);
+            let sisadetik = hasiltotaldetik % 3600;
+            let totalmenit = Math.floor(sisadetik / 60);
+            let second = sisadetik % 60;
+
+            console.log('${datajam} jam ${datamenit} menit ${datadetik} detik');
+            console.log('${totaljam} jam ${totalmenit} menit ${second} detik');
+        }
+
+        menghitung(2, 25, 11);
+    </script>
+</body>
+</html>

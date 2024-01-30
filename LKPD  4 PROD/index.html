@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let PABP = 80;
+        let MTK = 100;  
+        let DPK = 75;    
+        let mean = (PABP + MTK + DPK)/3;
+
+        if (mean >80 && mean <= 100) {
+            grade = 'A';
+        } else if (mean >=75 && mean <=80 ) {
+            grade ='B';
+        } else if (mean >=65 && mean <= 75) {
+            grade ='C';
+        } else if (mean >45 && mean <= 65){
+            grade ='E';
+        } else {
+            grade ='K';
+        }
+
+        console.log(`nilai aku ${grade}`) 
+
+        
+    </script>
+</body>
+</html>

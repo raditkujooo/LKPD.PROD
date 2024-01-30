@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // soal no 3
+
+// menerima input dari pengguna untuk total detik
+var totalDetik = prompt("Masukkan total detik:");
+
+// menghitung jam,menit,detik
+var jam = Math.floor(totalDetik / 3600);
+var sisaDetik = totalDetik % 3600;
+var menit = Math.floor(sisaDetik / 60);
+var detik = sisaDetik % 60;
+
+// menampilkan hasil
+console.log(`${jam} jam ${menit} menit ${detik} detik`);
+alert(`${jam} jam ${menit} menit ${detik} detik`);
+    </script>
+</body>
+</html>
